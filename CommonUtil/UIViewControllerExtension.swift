@@ -11,6 +11,7 @@ import UIKit
 
 extension UIViewController {
     
+    // MARK:画面遷移
     
     public func changeViewPresent(storyboard: String, crossDissolve: Bool = false) {
         let sb = UIStoryboard(name: storyboard, bundle: nil)
@@ -33,9 +34,11 @@ extension UIViewController {
         show(vc, sender: nil)
     }
     
+    // MARK:アラート関連
+    
     /*
-     アラート
-     @param message = アラートに表示するメッセージ
+     * アラート
+     * @param message = アラートに表示するメッセージ
      */
     public func showAlertMessage(_ message: String) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
@@ -47,12 +50,14 @@ extension UIViewController {
     }
     
     /*
-     ↑のアラートを消す
+     * ↑のアラートを消す
      */
     @objc public func dissmissAlert() {
         self.dismiss(animated: true, completion: nil)
     }
     
+    // MARK:インジケーター
+
     public func setUpIndicator(vc: UIViewController) -> (UIActivityIndicatorView) {
         let activeIndicator = UIActivityIndicatorView()
         activeIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
@@ -64,4 +69,57 @@ extension UIViewController {
         return activeIndicator
     }
     
+    // MARK:UserDefault
+    public func getUserString(key:String) -> String {
+        let value = UserDefaults.standard.string(forKey: key)
+        if value != nil {
+            return value!
+        } else {
+            return ""
+        }
+    }
+    
+    public func getUserInteger(key:String) -> Int {
+        let value = UserDefaults.standard.integer(forKey: key)
+        return value
+    }
+    
+    public func getUserDefault_S(key:String) -> String {
+        let value = UserDefaults.standard.string(forKey: key)
+        if value != nil {
+            return value!
+        } else {
+            return ""
+        }
+    }
+    
+    public func setUserDefault(key:String,value:Any) {
+        UserDefaults.standard.set(value, forKey: key)
+    }
+    
+    
+    /*
+     * 高さがキーボードに被る場合スクロールさせる。
+     */
+    func moveUpViewPosition(textField: UITextField, vc: UIViewController) {
+        var bounceHeight: CGFloat = 0.0
+        if textField.frame.origin.y < 240 {
+            bounceHeight = -130
+        } else {
+            bounceHeight = -210
+        }
+        UIView.animate(withDuration: 0.25, animations: { () in
+            let transform = CGAffineTransform(translationX: 0, y: bounceHeight)
+            vc.view.transform = transform
+        })
+    }
+    
+    /*
+     * キーボード非表示時に上に上がっている画面を元に戻す
+     */
+    func moveDownViewPosition(vc: UIViewController) {
+        UIView.animate(withDuration: 0.25, animations: { () in
+            vc.view.transform = .identity
+        })
+    }
 }

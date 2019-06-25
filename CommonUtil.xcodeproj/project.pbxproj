@@ -14,6 +14,8 @@
 		E094413422C075940041A8E2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094413022C075940041A8E2 /* UIViewControllerExtension.swift */; };
 		E094413522C075940041A8E2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094413122C075940041A8E2 /* UIColorExtension.swift */; };
 		E094413622C075940041A8E2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094413222C075940041A8E2 /* StringExtension.swift */; };
+		E094413E22C0788C0041A8E2 /* LogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094413D22C0788C0041A8E2 /* LogUtil.swift */; };
+		E094414022C07A150041A8E2 /* ExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094413F22C07A150041A8E2 /* ExtensionHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		E094413022C075940041A8E2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		E094413122C075940041A8E2 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		E094413222C075940041A8E2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E094413D22C0788C0041A8E2 /* LogUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtil.swift; sourceTree = "<group>"; };
+		E094413F22C07A150041A8E2 /* ExtensionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				E094411822C075800041A8E2 /* CommonUtil.h */,
+				E094413D22C0788C0041A8E2 /* LogUtil.swift */,
 				E094413222C075940041A8E2 /* StringExtension.swift */,
 				E094413122C075940041A8E2 /* UIColorExtension.swift */,
 				E094412F22C075940041A8E2 /* UIImageExtension.swift */,
 				E094413022C075940041A8E2 /* UIViewControllerExtension.swift */,
+				E094413F22C07A150041A8E2 /* ExtensionHelper.swift */,
 				E094411922C075800041A8E2 /* Info.plist */,
 			);
 			path = CommonUtil;
@@ -230,8 +236,10 @@
 			files = (
 				E094413622C075940041A8E2 /* StringExtension.swift in Sources */,
 				E094413422C075940041A8E2 /* UIViewControllerExtension.swift in Sources */,
+				E094413E22C0788C0041A8E2 /* LogUtil.swift in Sources */,
 				E094413322C075940041A8E2 /* UIImageExtension.swift in Sources */,
 				E094413522C075940041A8E2 /* UIColorExtension.swift in Sources */,
+				E094414022C07A150041A8E2 /* ExtensionHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

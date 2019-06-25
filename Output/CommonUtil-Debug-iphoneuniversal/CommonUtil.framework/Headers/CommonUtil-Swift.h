@@ -188,6 +188,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+@class UITouch;
+@class UIEvent;
+
+@interface UIScrollView (SWIFT_EXTENSION(CommonUtil))
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+@end
+
 
 @interface UIViewController (SWIFT_EXTENSION(CommonUtil))
 - (void)dissmissAlert;

@@ -19,5 +19,13 @@ extension Date {
         return formatter.string(from: self)
     }
 
-    
+    var stringFromDate2: String {
+        let formatter: DateFormatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.locale = .japan
+        formatter.dateFormat = "yyyy'-'MM'-'dd' 'HH':'mm':'ss"
+        
+        return formatter.string(from: self)
+    }
+
 }
