@@ -19,11 +19,11 @@ extension String {
 }
 
 extension Locale {
-    static let japan = Locale(identifier: "ja_JP")
+    public static let japan = Locale(identifier: "ja_JP")
 }
 
 extension TimeZone {
-    static let japan = TimeZone(identifier: "Asia/Tokyo")!
+    public static let japan = TimeZone(identifier: "Asia/Tokyo")!
 }
 
 extension UIScrollView {
@@ -33,9 +33,9 @@ extension UIScrollView {
     }
 }
 
-class CustomTextField: UITextField {
+public class CustomTextField: UITextField {
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         self.borderStyle = .none
         self.layer.cornerRadius = self.frame.height / 2
@@ -45,17 +45,17 @@ class CustomTextField: UITextField {
     }
     
     // 入力したテキストの余白
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
+    override public func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: 10.0, dy: 0.0)
     }
     
     // 編集中のテキストの余白
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+    override public func editingRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: 10.0, dy: 0.0)
     }
     
     // プレースホルダーの余白
-    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+    override public func placeholderRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: 10.0, dy: 0.0)
     }
 }

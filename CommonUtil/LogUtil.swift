@@ -9,7 +9,7 @@
 import UIKit
 
 /** デバッグ時のみ出力するログ **/
-func DLog(msg: String,
+public func DLog(msg: String,
           function: String = #function,
           file: String = #file,
           line: Int = #line) {
@@ -19,13 +19,13 @@ func DLog(msg: String,
     #endif
 }
 
-func className(from filePath: String) -> String {
+public func className(from filePath: String) -> String {
     let fileName = filePath.components(separatedBy: "/").last
     return fileName?.components(separatedBy: ".").first ?? ""
 }
 
 /** 無条件で出力するログ **/
-func ALog(msg: String,
+public func ALog(msg: String,
           function: String = #function,
           line: Int = #line) {
     

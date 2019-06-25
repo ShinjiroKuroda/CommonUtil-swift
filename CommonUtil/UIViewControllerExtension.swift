@@ -101,7 +101,7 @@ extension UIViewController {
     /*
      * 高さがキーボードに被る場合スクロールさせる。
      */
-    func moveUpViewPosition(textField: UITextField, vc: UIViewController) {
+    public func moveUpViewPosition(textField: UITextField, vc: UIViewController) {
         var bounceHeight: CGFloat = 0.0
         if textField.frame.origin.y < 240 {
             bounceHeight = -130
@@ -117,7 +117,7 @@ extension UIViewController {
     /*
      * キーボード非表示時に上に上がっている画面を元に戻す
      */
-    func moveDownViewPosition(vc: UIViewController) {
+    public func moveDownViewPosition(vc: UIViewController) {
         UIView.animate(withDuration: 0.25, animations: { () in
             vc.view.transform = .identity
         })
