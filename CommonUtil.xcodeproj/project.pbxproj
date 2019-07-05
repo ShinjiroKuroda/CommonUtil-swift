@@ -16,6 +16,7 @@
 		E094413622C075940041A8E2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094413222C075940041A8E2 /* StringExtension.swift */; };
 		E094413E22C0788C0041A8E2 /* LogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094413D22C0788C0041A8E2 /* LogUtil.swift */; };
 		E094414022C07A150041A8E2 /* ExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094413F22C07A150041A8E2 /* ExtensionHelper.swift */; };
+		E0A7C3C222CF1C6F00F2E071 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A7C3C122CF1C6F00F2E071 /* UIApplicationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		E094413222C075940041A8E2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E094413D22C0788C0041A8E2 /* LogUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtil.swift; sourceTree = "<group>"; };
 		E094413F22C07A150041A8E2 /* ExtensionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionHelper.swift; sourceTree = "<group>"; };
+		E0A7C3C122CF1C6F00F2E071 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				E094412F22C075940041A8E2 /* UIImageExtension.swift */,
 				E094413022C075940041A8E2 /* UIViewControllerExtension.swift */,
 				E094413F22C07A150041A8E2 /* ExtensionHelper.swift */,
+				E0A7C3C122CF1C6F00F2E071 /* UIApplicationExtension.swift */,
 				E094411922C075800041A8E2 /* Info.plist */,
 			);
 			path = CommonUtil;
@@ -240,6 +243,7 @@
 				E094413322C075940041A8E2 /* UIImageExtension.swift in Sources */,
 				E094413522C075940041A8E2 /* UIColorExtension.swift in Sources */,
 				E094414022C07A150041A8E2 /* ExtensionHelper.swift in Sources */,
+				E0A7C3C222CF1C6F00F2E071 /* UIApplicationExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
