@@ -12,7 +12,7 @@ import UIKit
  UIApplication.shared.topViewController
  **/
 
-public extension UIApplication {
+extension UIApplication {
     public var topViewController: UIViewController? {
         guard var topViewController = UIApplication.shared.keyWindow?.rootViewController else { return nil }
         
