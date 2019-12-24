@@ -14,24 +14,24 @@ extension UIViewController {
     // MARK:画面遷移
     
     public func changeViewPresent(storyboard: String, crossDissolve: Bool = false) {
-        let sb = UIStoryboard(name: storyboard, bundle: nil)
-        let vc = sb.instantiateInitialViewController()!
-        if crossDissolve {
-            vc.modalTransitionStyle = .crossDissolve
-        }
-        present(vc, animated: true, completion: nil)
+//        let sb = UIStoryboard(name: storyboard, bundle: nil)
+//        let vc = sb.instantiateInitialViewController()!
+//        if crossDissolve {
+//            vc.modalTransitionStyle = .crossDissolve
+//        }
+//        present(vc, animated: true, completion: nil)
     }
     
     public func changeViewPush(storyboard: String) {
-        let sb = UIStoryboard(name: storyboard, bundle: nil)
-        let vc = sb.instantiateInitialViewController()!
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let sb = UIStoryboard(name: storyboard, bundle: nil)
+//        let vc = sb.instantiateInitialViewController()!
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     public func changeViewShow(storyboard: String) {
-        let sb = UIStoryboard(name: storyboard, bundle: nil)
-        let vc = sb.instantiateInitialViewController()!
-        show(vc, sender: nil)
+//        let sb = UIStoryboard(name: storyboard, bundle: nil)
+//        let vc = sb.instantiateInitialViewController()!
+//        show(vc, sender: nil)
     }
     
     // MARK:アラート関連
@@ -41,12 +41,12 @@ extension UIViewController {
      * @param message = アラートに表示するメッセージ
      */
     public func showAlertMessage(_ message: String) {
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        present(alert, animated: true, completion:{
-            alert.view.superview?.isUserInteractionEnabled = true
-            alert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dissmissAlert)))
-        })
+//        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//        present(alert, animated: true, completion:{
+//            alert.view.superview?.isUserInteractionEnabled = true
+//            alert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dissmissAlert)))
+//        })
     }
     
     /*
@@ -60,12 +60,12 @@ extension UIViewController {
 
     public func setUpIndicator(vc: UIViewController) -> (UIActivityIndicatorView) {
         let activeIndicator = UIActivityIndicatorView()
-        activeIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-        activeIndicator.center = vc.view.center
-        activeIndicator.hidesWhenStopped = true
-        activeIndicator.style = UIActivityIndicatorView.Style.gray
-        vc.view.addSubview(activeIndicator)
-        activeIndicator.startAnimating()
+//        activeIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+//        activeIndicator.center = vc.view.center
+//        activeIndicator.hidesWhenStopped = true
+//        activeIndicator.style = UIActivityIndicatorView.Style.gray
+//        vc.view.addSubview(activeIndicator)
+//        activeIndicator.startAnimating()
         return activeIndicator
     }
     

@@ -13,17 +13,17 @@ extension Date {
     
     public var stringFromDate: String {
         let formatter: DateFormatter = DateFormatter()
-        formatter.calendar = Calendar(identifier: .gregorian)
-        formatter.locale = Locale(identifier: "ja_JP")
-        formatter.dateFormat = "yyyy'/'MM'/'dd'('EEE')' HH:mm"
+//        formatter.calendar = Calendar(identifier: .gregorian)
+//        formatter.locale = Locale(identifier: "ja_JP")
+//        formatter.dateFormat = "yyyy'/'MM'/'dd'('EEE')' HH:mm"
         return formatter.string(from: self)
     }
 
     var stringFromDate2: String {
         let formatter: DateFormatter = DateFormatter()
-        formatter.calendar = Calendar(identifier: .gregorian)
-        formatter.locale = .japan
-        formatter.dateFormat = "yyyy'-'MM'-'dd' 'HH':'mm':'ss"
+//        formatter.calendar = Calendar(identifier: .gregorian)
+//        formatter.locale = .japan
+//        formatter.dateFormat = "yyyy'-'MM'-'dd' 'HH':'mm':'ss"
         
         return formatter.string(from: self)
     }

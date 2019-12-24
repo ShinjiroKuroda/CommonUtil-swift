@@ -11,9 +11,9 @@ import UIKit
 
 extension String {
     public func addingPercentEncodingExtension() -> String {
-        if !self.contains("rr.img.naver.jp") { // Naverの場合はエンコードしない
-            return self.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlFragmentAllowed)!
-        }
+//        if !self.contains("rr.img.naver.jp") { // Naverの場合はエンコードしない
+//            return self.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlFragmentAllowed)!
+//        }
         return self
     }
 }
